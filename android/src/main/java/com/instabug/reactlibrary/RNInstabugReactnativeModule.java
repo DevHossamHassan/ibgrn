@@ -10,7 +10,6 @@ import com.instabug.library.Instabug;
 import com.instabug.library.InstabugColorTheme;
 import com.instabug.library.InstabugTrackingDelegate;
 import com.instabug.library.internal.module.InstabugLocale;
-import com.instabug.library.invocation.InstabugInvocationEvent;
 import com.instabug.library.invocation.InstabugInvocationMode;
 import com.instabug.library.invocation.util.InstabugFloatingButtonEdge;
 import java.util.Locale;
@@ -194,12 +193,6 @@ public class RNInstabugReactnativeModule extends ReactContextBaseJavaModule {
     @Override
     public Map<String, Object> getConstants() {
     final Map<String, Object> constants = new HashMap<>();
-    constants.put("invocationEventFloatingButton", InstabugInvocationEvent.FLOATING_BUTTON);
-    constants.put("invocationEventTwoFingersSwipeLeft", InstabugInvocationEvent.TWO_FINGER_SWIPE_LEFT);
-    constants.put("invocationEventScreenshot", InstabugInvocationEvent.SCREENSHOT_GESTURE);
-    constants.put("invocationEventShake", InstabugInvocationEvent.SHAKE);
-    constants.put("invocationEventNone", InstabugInvocationEvent.NONE);
-
     return constants;
   }
 }
