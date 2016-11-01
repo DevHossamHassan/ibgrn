@@ -44,8 +44,6 @@ public class RNInstabugReactnativePackage implements ReactPackage {
                 .setTheme(InstabugColorTheme.InstabugColorThemeLight)
                 .setInvocationEvent(InstabugInvocationEvent.FLOATING_BUTTON)
                 .setIntroMessageEnabled(true)
-                .setConsoleLogState(Feature.State.DISABLED)
-                .setInstabugLogState(Feature.State.ENABLED)
                 .build();
 
     }
