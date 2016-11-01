@@ -38,11 +38,14 @@ public class RNInstabugReactnativePackage implements ReactPackage {
         this.mApplication = application;
 
         mInstagbug = new Instabug.Builder(mApplication, mToken)
-                .setDebugEnabled(true)
                 .setEmailFieldRequired(false)
-                .setColorTheme(InstabugColorTheme.InstabugColorThemeLight)
-                .setInvocationEvent(InstabugInvocationEvent.TWO_FINGER_SWIPE_LEFT)
-                //.setInvocationEvent(IBGInvocationEvent.IBGInvocationEventShake)
+                .setAttachmentTypesEnabled(true, true, true, true, true)
+                .setPromptOptionsEnabled(true, true, true)
+                .setTheme(InstabugColorTheme.InstabugColorThemeLight)
+                .setInvocationEvent(InstabugInvocationEvent.FLOATING_BUTTON)
+                .setIntroMessageEnabled(true)
+                .setConsoleLogState(Feature.State.DISABLED)
+                .setInstabugLogState(Feature.State.ENABLED)
                 .build();
 
     }
