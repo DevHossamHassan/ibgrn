@@ -9,7 +9,7 @@
   }, 
    "repository": {
     "type": "git",
-    "url": "git+https://github.com/Instabug/instabug-reactnative.git"
+    "url": "git+https://github.com/DevHossamHassan/ibgrn.git"
   },
   "keywords": [
     "react-native",   
@@ -22,9 +22,9 @@
   "author": "Hossam Hassan && Yousef Hamza",
   "license": "MIT",
     "bugs": {
-    "url": "https://github.com/Instabug/instabug-reactnative/issues"
+    "url": "https://github.com/DevHossamHassan/ibgrn/issues"
   },
-  "homepage": "https://github.com/Instabug/instabug-reactnative#readme",
+  "homepage": "https://github.com/DevHossamHassan/ibgrn#readme",
   "rnpm": {
     "android": {
       "packageInstance": "new RNInstabugReactnativePackage(${androidApplicationToken}, MainApplication.this)"
